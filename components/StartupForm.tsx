@@ -28,7 +28,7 @@ const StartupForm = () => {
                 pitch,
             }
 
-            await formSchema.parse(formValues);
+            await formSchema.parseAsync(formValues);
 
             const result = await createPitch(prevState, formData, pitch);
 
