@@ -14,8 +14,8 @@
 
 @theme {
   /* Primary palette */
-  --color-primary-100: #FFE8F0;
-  --color-primary:     #EE2B69;
+  --color-primary-100: #E8F0FF;
+  --color-primary:     #1E90FF;
 
   /* Secondary palette */
   --color-secondary:   #FBE843;
@@ -69,7 +69,7 @@
   @apply font-normal text-sm text-white-100/80;
 }
 
-@utility pink_container {
+@utility blue_container {
   @apply w-full bg-primary min-h-[530px] pattern flex justify-center items-center flex-col py-10 px-6;
 }
 
@@ -294,7 +294,7 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: #EE2B69;
+  --primary: #1E90FF;
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: #FBE843;
   --secondary-foreground: oklch(0.208 0.042 265.755);
@@ -337,7 +337,7 @@
   --accent: oklch(0.279 0.041 260.031);
   --accent-foreground: oklch(0.984 0.003 247.858);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
+  --border: oklch(100% 0.00011 271.152 / 0.1);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.551 0.027 264.364);
   --chart-1: oklch(0.488 0.243 264.376);

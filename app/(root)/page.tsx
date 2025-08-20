@@ -19,7 +19,7 @@ export default async function Home({ searchParams }: {
 
   return (
     <>
-      <section className="pink_container">
+      <section className="blue_container">
         <h1 className="heading">
           Pitch Your Startup, <br />
           Connect With Entrepreneurs
