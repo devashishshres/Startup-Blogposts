@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StartupLog
 
-## Getting Started
+StartupLog is designed to help startups and entrepreneurs document and share their startup journey. It is a modern web application built with **Next.js**, powered by **Sanity CMS** for content management.
 
-First, run the development server:
+By following this tutorial project from JavaScript Mastery and giving my own personal touch, I got hands-on practice with Next.js App Router and server/client components. I learned how to set up secure authentication, build and use API endpoints, and improve performance with proper error handling.
 
+![StartupLog Picture](./public/StartupLog.png)
+
+
+## Features
+- 🔐 Secure authentication with NextAuth
+- 📝 Rich content editing with Sanity CMS integration
+- 🏷️ Custom tagging and categorization
+- 🔍 Advanced search filter capability
+
+
+### Check out StartupLog [here](https://startuplog.vercel.app/)
+
+## Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory:
+```
+cd startup-log
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install dependencies:
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Create a .env.local file in the root directory with following variables:
+```
+AUTH_SECRET=your_auth
+AUTH_GITHUB_ID=your_github_id
+AUTH_GITHUB_SECRET=your_github_secret
 
-## Learn More
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_sanity_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=your_api_version
 
-To learn more about Next.js, take a look at the following resources:
+SANITY_WRITE_TOKEN=your_sanity_write_token
+SANITY_READ_TOKEN=your-sanity-read-token
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+(In .env.sentry-build-plugin include --> SENTRY_AUTH_TOKEN=your_sentry_auth_token)
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. Run the development server:
+```
+npm run dev
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
